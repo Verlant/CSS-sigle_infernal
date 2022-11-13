@@ -1,0 +1,61 @@
+main {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template: 2fr 1fr 2fr 1fr 3fr 1fr 2fr 1fr 2fr / 2fr 1fr 2fr 1fr 5fr 1fr 2fr 1fr 2fr;
+  /* grid-template-areas:
+    "green green green green green green green green green"
+    " . . . . . . . . green"
+    "green . blue blue blue . blue . green"
+    "green . . . . . blue . green"
+    "green . blue . yellow . blue . green"
+    "green . blue . blue blue blue . green"
+    "green . . . . . . . ."
+    "green . green green green green green green green"; */
+}
+.green {
+  background-color: #d5e8d4;
+  border: 1px solid #82b366;
+}
+.blue {
+  background-color: #dae8fc;
+  border: 1px solid #6c8ebf;
+}
+.yellow {
+  background-color: #ffe6cc;
+  border: 1px solid #d79b00;
+}
+.top_left_out {
+  grid-column: 1 / 8;
+}
+.top_right_out {
+  grid-row: 1 / 8;
+  grid-column: 9 / 9;
+}
+.bottom_right_out {
+  grid-row: 9 / 9;
+  grid-column: 3 / 10;
+}
+.bottom_left_out {
+  grid-row: 3 / 10;
+}
+.top_left_in {
+  grid-row: 3 / 4;
+  grid-column: 3 / 6;
+}
+.top_right_in {
+  grid-row: 3 / 6;
+  grid-column: 7 / 8;
+}
+.bottom_left_in {
+  grid-row: 5 / 8;
+  grid-column: 3 / 4;
+}
+.bottom_right_in {
+  grid-row: 7 / 8;
+  grid-column: 5 / 8;
+}
+.center {
+  grid-row: 5 / 6;
+  grid-column: 5 / 6;
+}
